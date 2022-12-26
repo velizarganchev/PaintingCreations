@@ -1,34 +1,40 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function Contact() {
+export const Contact = (params) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(params.ServiceId, params.TemplateId, form.current, params.PublicKey)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    };
     return (
         <>
             <h2 className='text-center mt-4'>Contact</h2>
             <div className='row'>
                 <div className='col-md-6 col-sm-12 col-xs-12'>
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="form-outline mb-4">
-                            <input type="text" id="form4Example1" className="form-control" />
-                            <label className="form-label" for="form4Example1">Name</label>
-                        </div>
-
-                        <div className="form-outline mb-4">
-                            <input type="email" id="form4Example2" className="form-control" />
-                            <label className="form-label" for="form4Example2">Email address</label>
+                            <input type="text" name="user_name" className="form-control" required />
+                            <label className="form-label" for="user_name">Name</label>
                         </div>
 
                         <div className="form-outline mb-4">
-                            <textarea className="form-control" id="form4Example3" rows="4"></textarea>
-                            <label className="form-label" for="form4Example3">Message</label>
+                            <input type="email" name="user_email" className="form-control" required />
+                            <label className="form-label" for="user_email">Email address</label>
                         </div>
 
-                        <div className="form-check d-flex justify-content-center mb-4">
-                            <input className="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-                            <label className="form-check-label" for="form4Example4">
-                                Send me a copy of this message
-                            </label>
+                        <div className="form-outline mb-4">
+                            <textarea className="form-control" name="message" rows="4" required></textarea>
+                            <label className="form-label" for="message">Message</label>
                         </div>
-
                         <button type="submit" className="btn btn-primary btn-block mb-4">Send</button>
                     </form>
                 </div>

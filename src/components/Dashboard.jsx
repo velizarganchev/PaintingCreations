@@ -6,13 +6,18 @@ import Contact from "./Contact";
 import TrustUs from "./TrustUs";
 
 function Dashboard(params) {
+
     return (
         <>
             <Header />
             <CurrentProjects />
-            <TrustUs/>
+            <TrustUs />
             <Services />
-            <Contact/>
+            <Contact
+                ServiceId={process.env.REACT_APP_YOUR_SERVICE_ID}
+                TemplateId={process.env.REACT_APP_YOUR_TEMPLATE_ID}
+                PublicKey={process.env.REACT_APP_YOUR_PUBLIC_KEY}
+            />
         </>);
 }
 
