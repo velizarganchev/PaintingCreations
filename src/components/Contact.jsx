@@ -23,30 +23,32 @@ export const Contact = (params) => {
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="form-outline mb-4">
                             <input type="text" name="user_name" className="form-control" required />
-                            <label className="form-label" for="user_name">Name</label>
+                            <label className="form-label" htmlFor="user_name">Name</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <input type="email" name="user_email" className="form-control" required />
-                            <label className="form-label" for="user_email">Email address</label>
+                            <label className="form-label" htmlFor="user_email">Email address</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <textarea className="form-control" name="message" rows="4" required></textarea>
-                            <label className="form-label" for="message">Message</label>
+                            <label className="form-label" htmlFor="message">Message</label>
                         </div>
                         <button type="submit" className="btn btn-primary btn-block mb-4">Send</button>
                     </form>
                 </div>
                 <div className='col-md-6 col-sm-12 col-xs-12'>
                     <div className='map-area'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.6132980631814!2d23.327795919082728!3d42.71361875218845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8ff34c8823e7%3A0x18d994b6b2a2ea6f!2sShell!5e0!3m2!1sde!2sde!4v1672039517813!5m2!1sde!2sde"
+                        <iframe
+                            title="address"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.6132980631814!2d23.327795919082728!3d42.71361875218845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8ff34c8823e7%3A0x18d994b6b2a2ea6f!2sShell!5e0!3m2!1sde!2sde!4v1672039517813!5m2!1sde!2sde"
                             width="600"
                             height="450"
                             style={{ border: "0" }}
-                            allowfullscreen=""
+                            allowFullScreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
                 </div>

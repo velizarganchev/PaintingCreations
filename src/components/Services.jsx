@@ -8,7 +8,7 @@ function Services() {
             <h2 className="text-center mb-4">Services</h2>
             <Row xs={1} md={3} className="g-4">
                 {Array.from({ length: 3 }).map((_, idx) => (
-                    <Col>
+                    <Col key={idx}>
                         <Card>
                             <Card.Img variant="top" src="https://www.zrthemes.com/2022/carzone/assets/images/photos/gallery-small-6.jpg" />
                             <Card.Body>
