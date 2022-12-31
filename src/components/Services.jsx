@@ -22,13 +22,12 @@ function Services() {
         }
     ];
 
-console.log(services[0].title);
     return (
         <>
             <h2 className="text-center m-5">Услуги</h2>
             <Row xs={1} md={3} className="g-4">
                 {services.map((_, idx) => (
-                    <Col>
+                    <Col key={idx}>
                         <Card>
                             <Card.Img variant="top" src={_.image} />
                             <Card.Body>

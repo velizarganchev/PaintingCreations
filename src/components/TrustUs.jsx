@@ -1,6 +1,6 @@
 import React from "react";
 
-function TrustUs(params) {
+function TrustUs() {
     return (
         <div className="trust-us p-5 mb-4 rounded-3">
             <div className="container-fluid py-5">
