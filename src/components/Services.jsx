@@ -3,20 +3,38 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 function Services() {
+
+    const services = [
+        {
+            title: "Автобояджийски услуги",
+            text: "За качеството на извършената работа се грижи високо-квалифицираният ни персонал, който периодично се обучава на иновативните световни подходи в и извън страната.",
+            image: "https://comunicatorbg.com/autoscrpion/head.jpg"
+        },
+        {
+            title: "Реставрация на стари дограми и врати",
+            text: "Ремонтът на дървени прозорци понастоящем е желание на собствениците на къщи и апартаменти за да запазят екологосъобразния материал и индивидуалността на жилището.",
+            image: "https://sunnyblind.com/wp-content/uploads/2018/10/%D0%B4%D1%8A%D1%80%D0%B2%D0%B5%D0%BD%D0%B0-%D0%B4%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0.jpg"
+        },
+        {
+            title: "Реставрация на стари дограми и врати",
+            text: "Ремонтът на дървени прозорци понастоящем е желание на собствениците на къщи и апартаменти за да запазят екологосъобразния материал и индивидуалността на жилището.",
+            image: "https://comunicatorbg.com/autoscrpion/head.jpg"
+        }
+    ];
+
+console.log(services[0].title);
     return (
         <>
-            <h2 className="text-center mb-4">Services</h2>
+            <h2 className="text-center m-5">Услуги</h2>
             <Row xs={1} md={3} className="g-4">
-                {Array.from({ length: 3 }).map((_, idx) => (
+                {services.map((_, idx) => (
                     <Col>
                         <Card>
-                            <Card.Img variant="top" src="https://www.zrthemes.com/2022/carzone/assets/images/photos/gallery-small-6.jpg" />
+                            <Card.Img variant="top" src={_.image} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>{_.title}</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    {_.text}
                                 </Card.Text>
                             </Card.Body>
                         </Card>

@@ -30,3 +30,9 @@ h6 {
   margin: 0 auto;
 }
 
+.logo{
+  width: 50px;
+}
+.trust-us{
+  background-image: url("https://serviz-adress.com/wp-content/uploads/2017/08/autopaint.jpg");
+}

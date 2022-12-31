@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import CurrentProjects from "./CurrentProjects";
 import Services from "./Services";
 import Contact from "./Contact";
 import TrustUs from "./TrustUs";
@@ -10,9 +9,8 @@ function Dashboard(params) {
     return (
         <>
             <Header />
-            <CurrentProjects />
-            <TrustUs />
             <Services />
+            <TrustUs />
             <Contact
                 ServiceId={process.env.REACT_APP_YOUR_SERVICE_ID}
                 TemplateId={process.env.REACT_APP_YOUR_TEMPLATE_ID}
