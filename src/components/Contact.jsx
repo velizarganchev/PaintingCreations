@@ -23,17 +23,17 @@ export const Contact = (params) => {
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="form-outline mb-4">
                             <input type="text" name="user_name" className="form-control" required />
-                            <label className="form-label" for="user_name">Name</label>
+                            <label className="form-label" htmlFor="user_name">Name</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <input type="email" name="user_email" className="form-control" required />
-                            <label className="form-label" for="user_email">Email address</label>
+                            <label className="form-label" htmlFor="user_email">Email address</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <textarea className="form-control" name="message" rows="4" required></textarea>
-                            <label className="form-label" for="message">Message</label>
+                            <label className="form-label" htmlFor="message">Message</label>
                         </div>
                         <button type="submit" className="btn btn-primary btn-block mb-4">Send</button>
                     </form>
@@ -46,9 +46,9 @@ export const Contact = (params) => {
                             width="600"
                             height="450"
                             style={{ border: "0" }}
-                            allowfullscreen=""
+                            allowFullScreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
                 </div>
