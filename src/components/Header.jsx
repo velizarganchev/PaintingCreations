@@ -6,36 +6,36 @@ function Header() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://scontent-fra5-2.xx.fbcdn.net/v/t1.6435-9/68824824_10217005691912933_9008573695815319552_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHcVn5T0GNGLJQYXcZ_bmUHRIZB6QNoxNFEhkHpA2jE0Rnp3NdzM7RWWaNwfbfxYlU&_nc_ohc=oxh7z0e__G4AX-6PvQP&_nc_ht=scontent-fra5-2.xx&oh=00_AfD_PRplbgDfk821HUd680fHwFgjowcQXxhggeBiJriUJg&oe=63CD3249"
+          src="https://debati.bg/wp-content/uploads/2020/07/Alaskapixar-2.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3 className='carusel-h3'>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='carusel-h3'>Номер 1 в Авиобояджийските услуги</h3>
+          <p>Ако имате нужда от професионалисти сте на правилното място</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://scontent-fra5-2.xx.fbcdn.net/v/t1.6435-9/48415776_10215326901904232_8050525070860222464_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFf-RdflZluqGdNKiowu01UDul5nLeufeoO6Xmct6596uiSqBYUJu5M51CP7Ztf_Qw&_nc_ohc=u54pqB4TOBkAX-R6dli&_nc_ht=scontent-fra5-2.xx&oh=00_AfCx3mk1SPoSSc33Q317DMFP4o7sWn2mUUwoJwQHjP54vw&oe=63CD3C98"
+          src="https://m.netinfo.bg/media/images/50258/50258657/745-425-kola.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3 className='carusel-h3'>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='carusel-h3'>Всякакви автобояджийски услуги</h3>
+          <p>Боядисване - Лакиране - Полиране</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://scontent-fra5-2.xx.fbcdn.net/v/t1.6435-9/48415776_10215326901904232_8050525070860222464_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFf-RdflZluqGdNKiowu01UDul5nLeufeoO6Xmct6596uiSqBYUJu5M51CP7Ztf_Qw&_nc_ohc=u54pqB4TOBkAX-R6dli&_nc_ht=scontent-fra5-2.xx&oh=00_AfCx3mk1SPoSSc33Q317DMFP4o7sWn2mUUwoJwQHjP54vw&oe=63CD3C98"
+          src="https://www.decor-dimotika.bg/wp-content/uploads/2020/02/lateks-cvetove-detska-staq-momche.webp"
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3 className='carusel-h3'>Third slide label</h3>
+          <h3 className='carusel-h3'>Боядисване на Мебели</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Свържи се с нас за повече информация
           </p>
         </Carousel.Caption>
       </Carousel.Item>

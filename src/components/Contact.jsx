@@ -17,25 +17,25 @@ export const Contact = (params) => {
     };
     return (
         <>
-            <h2 className='text-center mt-4'>Contact</h2>
+            <h2 className='text-center mt-5'>Контакт</h2>
             <div className='row'>
                 <div className='col-md-6 col-sm-12 col-xs-12'>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="form-outline mb-4">
                             <input type="text" name="user_name" className="form-control" required />
-                            <label className="form-label" htmlFor="user_name">Name</label>
+                            <label className="form-label" htmlFor="user_name">Име</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <input type="email" name="user_email" className="form-control" required />
-                            <label className="form-label" htmlFor="user_email">Email address</label>
+                            <label className="form-label" htmlFor="user_email">Имейл адрес</label>
                         </div>
 
                         <div className="form-outline mb-4">
                             <textarea className="form-control" name="message" rows="4" required></textarea>
-                            <label className="form-label" htmlFor="message">Message</label>
+                            <label className="form-label" htmlFor="message">Текст</label>
                         </div>
-                        <button type="submit" className="btn btn-primary btn-block mb-4">Send</button>
+                        <button type="submit" className="btn btn-primary btn-block mb-4">Изпрати</button>
                     </form>
                 </div>
                 <div className='col-md-6 col-sm-12 col-xs-12'>
