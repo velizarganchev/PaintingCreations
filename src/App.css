@@ -19,6 +19,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   color: black;
 }
+
 #root{
   position: relative;
   min-height: 100vh;
@@ -33,6 +34,13 @@ h6 {
 .logo{
   width: 50px;
 }
+.carusel-h3{
+  color: #ffffff;
+}
 .trust-us{
   background-image: url("https://serviz-adress.com/wp-content/uploads/2017/08/autopaint.jpg");
+}
+.trust-us-h1,
+.trust-us-p{
+  color: #ffffff;
 }
