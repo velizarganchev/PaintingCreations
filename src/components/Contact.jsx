@@ -17,7 +17,7 @@ export const Contact = (params) => {
     };
     return (
         <>
-            <h2 className='text-center mt-5'>Контакт</h2>
+            <h2 className='text-center mt-5 mb-4'>Контакт</h2>
             <div className='row'>
                 <div className='col-md-6 col-sm-12 col-xs-12'>
                     <form ref={form} onSubmit={sendEmail}>
