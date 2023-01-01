@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import logo from '../logopc.png'
+import { BsBoxArrowRight } from "react-icons/bs";
+import logo from '../logopc.png';
+
 function Navigation() {
   return (
     <div className="container">
@@ -13,8 +15,7 @@ function Navigation() {
           <li><Link to="/Gallery" className="nav-link px-2 link-secondary">Галерия</Link></li>
         </ul>
         <div className="col-md-3 text-end">
-          {/* <button type="button" className="btn btn-outline-primary me-2">Login</button>
-          <button type="button" className="btn btn-primary">Sign-up</button> */}
+          <Link to="/contact-us" className="nav-link px-2 link-secondary"><BsBoxArrowRight/> Получажане На Оферта</Link>
         </div>
       </header>
     </div>

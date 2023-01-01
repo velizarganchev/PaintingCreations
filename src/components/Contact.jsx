@@ -25,7 +25,10 @@ export const Contact = (params) => {
                             <input type="text" name="user_name" className="form-control" required />
                             <label className="form-label" htmlFor="user_name">Име</label>
                         </div>
-
+                        <div className="form-outline mb-4">
+                            <input type="text" name="user_phone" className="form-control" required />
+                            <label className="form-label" htmlFor="user_phone">Телефонен номер</label>
+                        </div>
                         <div className="form-outline mb-4">
                             <input type="email" name="user_email" className="form-control" required />
                             <label className="form-label" htmlFor="user_email">Имейл адрес</label>
