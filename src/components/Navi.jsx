@@ -1,18 +1,18 @@
-import { Link, Navigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { BsBoxArrowRight, BsTelephone, BsFacebook, BsInstagram } from "react-icons/bs";
 import logo from '../logopc.png';
 
 function Navigation() {
   return (
     <div className="container">
-      <ul class="nav align-items-center justify-content-end">
-        <li class="nav-item">
+      <ul className="nav align-items-center justify-content-end">
+        <li className="nav-item">
           <a href="tel:+359889729510" className="nav-link px-2 link-secondary"><BsTelephone /> Телефон за връзка 088888888</a>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <li className="ms-3"><a href="https://www.facebook.com/sergei.sredkov" className="text-muted"><BsFacebook /></a></li>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <li className="ms-3"><a href="https://www.instagram.com/sergey_sredkov/" className="text-muted"><BsInstagram /></a></li>
         </li>
       </ul>
