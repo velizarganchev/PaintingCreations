@@ -21,6 +21,11 @@
       "src": "pclogo.png",
       "type": "image/png",
       "sizes": "500x500"
+    }, 
+    {
+      "src": "p-creations-logo.png",
+      "type": "image/png",
+      "sizes": "500x500"
     }
   ],
   "start_url": ".",

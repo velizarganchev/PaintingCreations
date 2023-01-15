@@ -1,21 +1,10 @@
 import { Link} from 'react-router-dom';
 import { BsBoxArrowRight, BsTelephone, BsFacebook, BsInstagram } from "react-icons/bs";
-import logo from '../logopc.png';
+import logo from '../p-creations-logo.png';
 
 function Navigation() {
   return (
-    <div className="container">
-      <ul className="nav align-items-center justify-content-end">
-        <li className="nav-item">
-          <a href="tel:+359889729510" className="nav-link px-2 link-secondary"><BsTelephone /> Телефон за връзка 088888888</a>
-        </li>
-        <li className="nav-item">
-          <li className="ms-3"><a href="https://www.facebook.com/sergei.sredkov" className="text-muted"><BsFacebook /></a></li>
-        </li>
-        <li className="nav-item">
-          <li className="ms-3"><a href="https://www.instagram.com/sergey_sredkov/" className="text-muted"><BsInstagram /></a></li>
-        </li>
-      </ul>
+    <div>   
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <Link to="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src={logo} alt="logo" className='logo rounded' />

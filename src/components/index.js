@@ -1,0 +1,11 @@
+export { default as Navi } from './Navi';
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
+export { default as Dashboard } from './Dashboard';
+export { default as Gallery } from './Gallery';
+export { default as Contact } from './Contact';
+export { default as ContactUs } from './ContactUs';
+export { default as CurrentProjects } from './CurrentProjects';
+export { default as Services } from './Services';
+export { default as Team } from './Team';
+export { default as TrustUs } from './TrustUs';

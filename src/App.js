@@ -3,11 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navi from './components/Navi';
-import Dashboard from './components/Dashboard';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
-import ContactUs from './components/ContactUs';
+import { Navi, Dashboard, Gallery, Footer, ContactUs } from './components';
 
 function App() {
   return (
