@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import logo from '../logopc.png'
+import logo from '../p-creations-logo.png'
 
 import { BsFacebook, BsInstagram, BsTelephone } from "react-icons/bs";
 
